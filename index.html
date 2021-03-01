@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+ 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./res/Icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>Youssef 's Vault</title>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <ul>
+                    <li><a  href="#home">Home</a></li>
+                    <div class="FloatR">
+                       <li><a  href="#about">About</a></li>
+                       <li><a  href="#Projects">Achievements</a></li>
+                       <li><a href="#Skills">Skills</a></li>
+                       <li><a onclick="slideDown('mssg');"  href="#home">GitHub</a></li>
+                       <li><a  href="#contact">Contact</a></li>
+                  </div> 
+                </ul>
+                </nav>
+        <section id="home">
+            <div class="text">
+                <h1>Yousssef Hammi</h1> 
+                <h3>'そら'</h3>
+                <h3>Web Dev</h3><br>
+                <h3>Game Dev</h3><br>
+                <h3> HighSchool CS Student</h3><br>
+                <h3>Very Passionate About Game and Web Development.</h3><br>
+                <h3>I have three Certifications in game development(2D,3D), I use mostly Unity.
+                     And two certifications in web development (Basic web dev , Front End). I started making projects 
+                    in 2017 and I've won the best project prices in both Game and Web development.</h3>           
+            </div>
+          <section class="avatar">
+            <div id="mssg">
+              <h3>Hey!<br> Over Here!, Hover Over  The Photo And click The GitHub Icon If You Want To Checkout Some Of My Projects.</h3><p>Click <span onclick="slideUp('mssg');"> Here</span> To Remove The Displayed Message.</p>
+              </div>
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./res/me.png" alt="Avatar" style=" width:200px; height:200px;border-radius: 50%;">
+                </div>
+                <div class="flip-card-back">
+                  <a onclick="slideUp('mssg');"  href="https://github.com/WhatIsThePoint" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG83.png" alt="Github" style="width:200px;height:200px;"></a>
+                </div>
+              </div>
+          </div>
+        </section>
+        </section>
+        <section id="about">
+            <h1>About</h1><br>
+            <div class="text">
+            <p class="lead">I was born in 11 March 2004,
+                And since I was a kid I was passionate about new technologies and video games.
+                 As I grew up I became more and more interested in computer science and wanted to explore it.
+                  At the age of 13, 
+                  2017 I got my first certification in video game development and won the best project award for it. 
+                  In 2020 I oriented myself towards Web development and also won the best project award. 
+                It's a lot of fun and one of the reasons I'm studying computer science in high school.</p>
+                </div>
+                </section>
+        </section>
+        <section id="Projects">
+            <h1>Achievements</h1><br>
+            <div class="lead">
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="Skills">
+          <h1>Skills </h1>
+          <div class="cont1">
+        <div class="frow">
+          <div class="card">
+            <img src="res/python.png" alt="Avatar" style="width: 40%;">
+            <div class="conta">
+              <h4><b>Python Dev</b></h4> 
+              <p><b>Level : </b> Intermediate</p> 
+            </div>
+          </div>
+           <div class="card" title="I Still Need to Study for School :') .I have no time.">
+           <img src="res/ai.png" alt="Avatar" style="width: 40%;">
+           <div class="conta">
+             <h4><b>Ai and Robotic</b></h4> 
+             <p><b>Starting soon... </b> </p> 
+           </div>
+         </div>
+         <div class="card">
+           <img src="res/ard.png" alt="Avatar" style="width: 40%;">
+           <div class="conta">
+             <h4><b>Arduino & Rasberry Pi</b></h4> 
+             <p><b>Level : </b>Beginner </p> 
+           </div>
+         </div>
+          </div>
+           <div class="serow">
+           <div class="card">
+           <img src="res/webdev.png" alt="Avatar" style="width: 30%;">
+           <div class="conta">
+             <h4><b>WebDev</b></h4><br>
+             <p><b>Level :</b> Advanced <br>Html, Css, Js , React.Js ,Redux</p> 
+           </div>
+         </div>
+         <div class="card">
+           <img src="res/unity.png" alt="Avatar"style="width: 30%;" >
+           <div class="conta">
+             <h4><b>Game Dev</b></h4> 
+             <p><b>Level : </b>2D Advanced / 3D Beginner  </p> 
+           </div>
+         </div>
+         <div class="card">
+          <img src="res/blend.png" alt="Avatar"style="width: 30%;" >
+          <div class="conta">
+            <h4><b>Blender</b></h4> 
+            <p><b>Level : </b>Beginner  </p> 
+          </div>
+        </div>
+         </div>
+         <!--<div class="throw">
+          <div class="card">
+          <img src="res/webdev.png" alt="Avatar" style="width: 30%;">
+          <div class="conta">
+            <h4><b>WebDev</b></h4><br>
+            <p><b>Level :</b> Advanced <br>Html, Css, Js , React.Js ,Redux</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="res/unity.png" alt="Avatar"style="width: 30%;" >
+          <div class="conta">
+            <h4><b>Game Dev</b></h4> 
+            <p><b>Level : </b>2D Advanced / 3D Beginner  </p> 
+          </div>
+        </div>
+        <div class="card">
+         <img src="res/blend.png" alt="Avatar"style="width: 30%;" >
+         <div class="conta">
+           <h4><b>Blender</b></h4> 
+           <p><b>Level : </b>Beginner  </p> 
+         </div>
+       </div>
+        </div>-->
+          </div>
+        
+        </section>
+     
+        <section id="contact">
+        
+         <h1>Contact</h1>
+         <div class="cont">
+           <form onsubmit="return check()" >
+             <div class="ip">
+             <input type="text"id="Fn" placeholder="First Name" required>
+             <input type="text"id="Ln"  placeholder="Last Name" required>
+           </div>
+           <div class="ip2">
+             <input type="text" id="age"  placeholder="Age" required>
+             <input type="text" id="mail" placeholder="Email" required>
+           </div>
+           <div class="rad">
+             <h2>Thoughts about The web site :</h2>
+             <input type="radio" name="rad" id="re" value="per" required> <label for="per">Perfect!!</label><br>
+             <input type="radio" name="rad" id="re" value="op" required> <label for="op">It's needs some optimization.</label><br>
+             <input type="radio" name="rad" id="re" value="un" required> <label for="per">It's unpleasant.</label><br>
+             <input type="radio" name="rad" id="re" value="del" required> <label for="del">Delete this.</label><br>
+           </div>
+           <div class="com">
+             <h2>Leave some feedback :</h2>
+             <textarea name="feed" id="feed" cols="70" rows="5" required></textarea>
+           </div>
+           <button type="reset">Reset</button>
+            <button type="submit" >Submit</button>
+           <div class="sm">
+             <h4>Contacts: </h4>
+             <a href="https://www.instagram.com/youssef._.hammi/" target="_balnk"><p class="ins"> Instagram</p></a>
+             <a href="https://twitter.com/Youssef67556454" target="_blank"><p class="tw">Twitter</p></a>
+             <a href="https://www.facebook.com/profile.php?id=100009152245352" target="_blank"><p class="fb">Facebook</p></a>
+             <a href="https://github.com/WhatIsThePoint" target="_blank"><p class="git">GitHub</p></a>
+             <a href="mailto:youssef.hammi.oa@gmail.com" target="_blank"><p class="mail">Mail</p></a>
+           </div>
+           </form>
+             </div>
+            </div>
+     </section>
+   </div>
+      <footer>
+
+      </footer>
+      <script src="Js/scrpit.js"></script>
+</body>
+</html>

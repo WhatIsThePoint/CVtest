@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  width: 100%;
+}
+ul {
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 0px 8px 21px 10px rgba(0, 0, 0, 0.37);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li a:hover {
+  opacity: 0.3;
+}
+
+nav .FloatR {
+  float: right;
+}
+li {
+  float: left;
+}
+.lead {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  text-align: justify;
+  width: 90%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+/* Section Images */
+section#home {
+  background: url(https://wallpapercave.com/wp/wp7338046.jpg) no-repeat center
+    center/cover;
+}
+
+section#about {
+  background: url(https://wallpapercave.com/wp/wp7856567.jpg) no-repeat center
+    center/cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-evenly;
+}
+section#Projects {
+  background: url(https://wallpapercave.com/wp/wp6045534.jpg) no-repeat center
+    center/cover;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+section#Skills {
+  background: url(https://wallpapercave.com/wp/wp6554458.jpg) no-repeat center
+    center/cover;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+section#contact {
+  background: url(https://wallpapercave.com/wp/wp7382454.jpg) no-repeat center
+    center/cover;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.avatar {
+  margin-top: 30%;
+  flex-direction: column;
+}
+.text {
+  margin-left: 5%;
+}
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 50%;
+}
+
+.flip-card-back {
+  background-color: rgba(0, 0, 0, 0);
+  transform: rotateY(180deg);
+  border-radius: 50%;
+}
+.flip-card:hover {
+  cursor: pointer;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 410px;
+  width: 650px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 410px;
+  width: 650px;
+}
+.slide h3 {
+  padding-left: 10px;
+}
+.slide:nth-child(1) {
+  background: url(../res/cer.png) no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url(../res/cer.png) no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url(../res/cer.png) no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+  background: url(../res/cer.png) no-repeat center center/cover;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -650px;
+  }
+  50% {
+    margin-left: -650px;
+  }
+  60% {
+    margin-left: -1300px;
+  }
+  70% {
+    margin-left: -1300px;
+  }
+  80% {
+    margin-left: -1950px;
+  }
+  90% {
+    margin-left: -1950px;
+  }
+}
+
+#mssg {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+#mssg h3 {
+  text-decoration: blink;
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+#mssg span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cont {
+  width: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 5%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  color: black;
+}
+.cont form .ip input {
+  border: 0px solid white;
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+  outline: none;
+}
+.cont form .ip2 input {
+  border: 0px solid white;
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+  outline: none;
+}
+form .ip {
+  display: flex;
+  flex-direction: row;
+}
+form input {
+  padding-left: 2%;
+}
+form .ip2 {
+  display: flex;
+  flex-direction: row;
+}
+form .rad {
+  margin: 2%;
+}
+form textarea {
+  outline: none;
+}
+
+form button {
+  font-family: "Josefin Sans", sans-serif;
+  border: white;
+  width: 30%;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: black 2px solid;
+  outline: none;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #f6a8ff,
+    #b479f7,
+    #7b78fa,
+    #5889fc
+  );
+}
+form button:hover {
+  cursor: pointer;
+  opacity: 1;
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #f6a8ff,
+    #b479f7,
+    #7b78fa,
+    #5889fc
+  );
+}
+form .sm {
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+form .sm a {
+  text-decoration: none;
+}
+form .sm .ins {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form .sm .fb {
+  background: -webkit-linear-gradient(120deg, #3b5998, #160091, #3b5998);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form .sm .git {
+  background: -webkit-linear-gradient(45deg, #000000, #6d6c6c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+form .sm .tw {
+  background: -webkit-linear-gradient(45deg, #405de6, #00acee, #fd1d1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form .sm .mail {
+  background: -webkit-linear-gradient(120deg, #8f0000, #d10000, #6a6a6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.conta {
+  padding: 2px 16px;
+}
+
+section #Skills div .cont1 .conta {
+  display: flex;
+  flex-direction: column;
+}
+section#Skills div .frow {
+  display: flex;
+  justify-content: space-evenly;
+}
+section#Skills div .serow {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+/*section#Skills  div   .throw{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}*/
